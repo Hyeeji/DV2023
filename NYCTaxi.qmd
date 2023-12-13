@@ -120,11 +120,12 @@ fig3.update_traces(
 )
 fig3.update_legends({'title':'평균속력'})
 
-for i in range(len(fig.data)):
+for i in range(len(fig3.data)):
   if fig3.data[i].mode == 'markers':
     fig3.data[i].name += ' (pickup/dropoff)'
   else:
     fig3.data[i].name += ' (path)'
+
 ```
 
 # 기말고사1-(1),(2)
