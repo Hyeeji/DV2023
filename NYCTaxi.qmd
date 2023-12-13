@@ -119,7 +119,12 @@ fig3.update_traces(
     opacity=0.8,
 )
 fig3.update_legends({'title':'평균속력'})
-fig3.update_layout(legend_traceorder='grouped')
+
+for i in range(len(fig.data)):
+  if fig3.data[i].mode == 'markers':
+    fig3.data[i].name += ' (pickup/dropoff)'
+  else:
+    fig3.data[i].name += ' (path)'
 ```
 
 # 기말고사1-(1),(2)
