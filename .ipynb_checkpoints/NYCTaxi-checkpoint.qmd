@@ -1,6 +1,6 @@
 ---
 title: "NYCTaxi"
-author: "한혜지(2021-43052)"
+author: "한혜지(201918380)"
 format: dashboard
 execute: 
   enabled: true
